@@ -22,4 +22,5 @@ binary_string = binary_string + bin(bits_length)[2:].zfill(64)
 # Spliting the binary string into 512 chunks
 binary_string_chunks = re.findall('.{512}', binary_string)
 
+
 #binary_message = hex(int(binary_string, base=2))
