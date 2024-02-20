@@ -1,4 +1,5 @@
 import numpy as np
+import re
 
 message = input('Please enter the message contents \n')
 intial_message_length = len(message)
@@ -17,5 +18,9 @@ while (len(binary_string) % 512 != 448):
 
 # Append length of binary representation in 64 bits
 binary_string = binary_string + bin(bits_length)[2:].zfill(64)
+
+# Spliting the binary string into 512 chunks
+binary_string_chunks = re.findall('.{512}', binary_string)
+
 
 #binary_message = hex(int(binary_string, base=2))
