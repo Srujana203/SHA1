@@ -66,7 +66,6 @@ for message_chunk in binary_string_chunks:
     D = H3
     E = H4
 
-    print(message_chunk_list)
 
     for t in range(0,80):
         #message_chunk_hex_value = hex_value(message_chunk_list[t])
